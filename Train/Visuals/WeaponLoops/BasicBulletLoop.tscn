@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Train/Visuals/GenericLoop.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Train/Visuals/WeaponLoops/FastBulletLoop.gd" type="Script" id=2]
+[ext_resource path="res://Train/Weapons/Bullets/thornybullet.png" type="Texture" id=3]
+
+[node name="BasicBulletLoop" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="Sprite3D" type="Sprite3D" parent="origin/s1" index="0"]
+transform = Transform( -3.27835e-08, 0.75, 4.37114e-08, 0, -3.27835e-08, 1, 0.75, 3.27835e-08, 1.91069e-15, 1.74846e-07, 0, -2 )
+texture = ExtResource( 3 )
+
+[node name="Sprite3D2" type="Sprite3D" parent="origin/s2" index="0"]
+transform = Transform( -3.27835e-08, 0.75, 4.37114e-08, 0, -3.27835e-08, 1, 0.75, 3.27835e-08, 1.91069e-15, 8.74228e-08, 0, -2 )
+texture = ExtResource( 3 )
+
+[node name="Sprite3D3" type="Sprite3D" parent="origin/s3" index="0"]
+transform = Transform( -3.27835e-08, 0.75, 4.37114e-08, 0, -3.27835e-08, 1, 0.75, 3.27835e-08, 1.91069e-15, 0, 0, -2 )
+texture = ExtResource( 3 )
+
+[node name="Sprite3D4" type="Sprite3D" parent="origin/s4" index="0"]
+transform = Transform( 1.4603e-07, 0.75, 4.37114e-08, 0, -3.27835e-08, 1, 0.75, -1.4603e-07, -8.51092e-15, -8.74228e-08, 0, -2 )
+texture = ExtResource( 3 )

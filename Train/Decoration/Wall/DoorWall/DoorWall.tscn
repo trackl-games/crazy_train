@@ -1,0 +1,33 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Train/Decoration/Wall/BetaWall/walltester.png" type="Texture" id=1]
+[ext_resource path="res://Train/Decoration/Wall/DoorWall/dooritself.png" type="Texture" id=2]
+[ext_resource path="res://Train/Decoration/Wall/Wall.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Train/Decoration/Wall/DoorWall/doorframe.png" type="Texture" id=4]
+
+[sub_resource type="PlaneMesh" id=1]
+
+[sub_resource type="SpatialMaterial" id=2]
+flags_transparent = true
+params_depth_draw_mode = 2
+albedo_texture = ExtResource( 1 )
+
+[node name="DoorWall" instance=ExtResource( 3 )]
+
+[node name="frame" type="Sprite3D" parent="." index="0"]
+transform = Transform( 0.45, 0, 0, 0, 0.46, 0, 0, 0, 1, 0, 1.41753, 0.047424 )
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 4 )
+
+[node name="door" type="Sprite3D" parent="." index="1"]
+transform = Transform( 0.49, 0, 0, 0, 0.47, 0, 0, 0, 1, 0, 1.32312, 0.0834036 )
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="." index="2"]
+transform = Transform( -1.0115, -1.74846e-07, 1.25889e-07, -8.84282e-08, 1.74846e-08, -1.44, 1.76856e-07, -1, -1.57361e-07, 0, 1.41753, 0 )
+visible = false
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )

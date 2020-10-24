@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Train/Weapons/Bullets/Bullet.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Train/Weapons/Bullets/FastBullet.gd" type="Script" id=2]
+[ext_resource path="res://Train/Weapons/Bullets/shitbullet.png" type="Texture" id=3]
+
+
+
+[node name="FastBullet" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="bullet" type="Sprite3D" parent="Model" index="0"]
+transform = Transform( 0.5, 2.18557e-08, -1.91069e-15, 0, -2.18557e-08, -1, -2.18557e-08, 0.5, -4.37114e-08, 0, 0, 0 )
+texture = ExtResource( 3 )

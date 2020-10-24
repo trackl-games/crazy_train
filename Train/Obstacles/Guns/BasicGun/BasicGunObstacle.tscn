@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Train/Obstacles/Obstacle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Train/Weapons/Guns/browngun.png" type="Texture" id=2]
+[ext_resource path="res://Train/Obstacles/Guns/BasicGun/BasicGunObstacle.gd" type="Script" id=3]
+
+[node name="BasicGunObstacle" instance=ExtResource( 1 )]
+script = ExtResource( 3 )
+
+[node name="model" parent="." index="2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.837381, 0 )
+
+[node name="gun" type="Sprite3D" parent="model" index="0"]
+transform = Transform( 0.2, 0, 0, 0, 0.159996, -0.120006, 0, 0.120006, 0.159996, 0, -0.0913178, 0 )
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 2 )

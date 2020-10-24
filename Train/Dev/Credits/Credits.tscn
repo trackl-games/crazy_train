@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Train/Dev/Credits/Credits.gd" type="Script" id=1]
+
+[node name="Credits" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+margin_left = 454.46
+margin_top = 19.7619
+margin_right = -365.54
+margin_bottom = 107.762
+text = "Crazy Train Demo:
+Programming: Harrison Hall
+Design: George Antash
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="restart" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 842.0
+margin_top = 510.0
+margin_right = -55.0
+margin_bottom = -42.0
+text = "Restart"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]

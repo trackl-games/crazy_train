@@ -1,0 +1,25 @@
+{
+	"size" : {
+		"w" : 7,
+		"h" : 6
+	},
+	"map": [
+		" pxrx f",
+		"  oGx  ",
+		"pxpLxx ",
+		"p      ",
+		" G   Gb",
+		"K x x  "
+	],
+	"floor": [
+		"wwwwwww",
+		"wwwwwww",
+		"wwwwwww",
+		"wwwwwww",
+		"wwwwwww",
+		"wwwwwww"
+	],
+	"wall": "bbbbbbbbbdbbbbbbbbb",
+	"lighting": ["default"],
+	"start": [3, 0]
+}

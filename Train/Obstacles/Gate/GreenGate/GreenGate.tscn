@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Train/Obstacles/Gate/Gate.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Train/Obstacles/Gate/GreenGate/GreenGate.gd" type="Script" id=2]
+[ext_resource path="res://Train/Obstacles/Gate/GreenGate/onegateback.png" type="Texture" id=3]
+[ext_resource path="res://Train/Obstacles/Gate/GreenGate/onegateback4.png" type="Texture" id=4]
+[ext_resource path="res://Train/Obstacles/Gate/GreenGate/onegateback2.png" type="Texture" id=5]
+[ext_resource path="res://Train/Obstacles/Gate/GreenGate/onegateback3.png" type="Texture" id=6]
+
+[node name="GreenGate" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0112373, 0 )
+script = ExtResource( 2 )
+
+[node name="Sprite3D" type="Sprite3D" parent="model" index="0" groups=[
+"Obstacle",
+]]
+transform = Transform( 0.35, 0, 0, 0, 0.303109, -0.500001, 0, 0.175, 0.866025, -0.104287, 0.838479, -0.280313 )
+flip_h = true
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 3 )
+
+[node name="Sprite3D2" type="Sprite3D" parent="model" index="1" groups=[
+"Obstacle",
+]]
+transform = Transform( 0.35, 0, 0, 0, 0.303109, -0.500001, 0, 0.175, 0.866025, 0.438555, 0.541076, -0.455757 )
+flip_h = true
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 5 )
+
+[node name="Sprite3D3" type="Sprite3D" parent="model" index="2" groups=[
+"Obstacle",
+]]
+transform = Transform( 0.35, 0, 0, 0, 0.303109, -0.500001, 0, 0.175, 0.866025, -0.396983, 0.649036, -0.554729 )
+flip_h = true
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 6 )
+
+[node name="Sprite3D4" type="Sprite3D" parent="model" index="3" groups=[
+"Obstacle",
+]]
+transform = Transform( 0.35, 0, 0, 0, 0.303109, -0.500001, 0, 0.175, 0.866025, 0.206653, 0.40923, -0.705675 )
+flip_h = true
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 4 )

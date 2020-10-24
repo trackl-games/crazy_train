@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Train/Visuals/Particle/Wisp/WillowWisp.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Train/Visuals/Particle/Wisp/MovingWisp.gd" type="Script" id=2]
+
+
+[node name="MovingWisp" type="Spatial"]
+script = ExtResource( 2 )
+
+[node name="WillowWisp" parent="." instance=ExtResource( 1 )]

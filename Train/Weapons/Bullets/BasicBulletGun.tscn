@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Train/Weapons/Guns/browngun.png" type="Texture" id=1]
+[ext_resource path="res://Train/Weapons/Bullets/Bullet.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Train/Weapons/Bullets/BasicBulletGun.gd" type="Script" id=3]
+
+[node name="BasicBulletGun" instance=ExtResource( 2 )]
+script = ExtResource( 3 )
+
+[node name="Sprite3D" type="Sprite3D" parent="Model" index="0"]
+transform = Transform( 0.2, 0, 0, 0, 0.141421, -0.707107, 0, 0.141421, 0.707107, 0, 0, 0 )
+alpha_cut = 1
+texture = ExtResource( 1 )

@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Train/Obstacles/Basic/Table/tablebot.png" type="Texture" id=1]
+[ext_resource path="res://Train/Obstacles/Basic/Table/Table.gd" type="Script" id=2]
+[ext_resource path="res://Train/Obstacles/Basic/Table/tabletop.png" type="Texture" id=3]
+[ext_resource path="res://Train/Obstacles/Obstacle.tscn" type="PackedScene" id=4]
+
+[node name="Table" instance=ExtResource( 4 )]
+script = ExtResource( 2 )
+
+[node name="top" type="Sprite3D" parent="model" index="0"]
+transform = Transform( 0.5, 0, 0, 0, 0.11623, -0.972606, 0, 0.486303, 0.232461, 0, 0.565117, -0.212874 )
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 3 )
+
+[node name="bot" type="Sprite3D" parent="model" index="1"]
+transform = Transform( 0.5, 0, 0, 0, 0.307101, -0.479703, 0, 0.167896, 0.877431, 0, 0.249447, -0.699833 )
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )

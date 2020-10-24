@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Train/Dev/Loading/Loading.gd" type="Script" id=1]
+
+[node name="Loading" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Node2D"]
+margin_left = 485.897
+margin_top = 308.761
+margin_right = 725.897
+margin_bottom = 407.761
+text = "LOADING"
+__meta__ = {
+"_edit_use_anchors_": false
+}

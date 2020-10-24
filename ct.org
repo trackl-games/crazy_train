@@ -1,0 +1,23 @@
+* Crazy Train
+** Todo List
+*** DONE 2nd gun (slow, limited bullets, explodes after x turns)
+	CLOSED: [2020-10-24 Sat 12:34]
+*** TODO Add perspective to outside scenery
+*** DONE End-of-level/credits trigger, 
+	CLOSED: [2020-08-12 Wed 00:55]
+*** TODO Lock and key mechanics
+*** DONE Redo how guns work
+	CLOSED: [2020-08-11 Tue 00:15]
+*** DONE Implement fire effect, 
+	CLOSED: [2020-08-10 Mon 15:48]
+*** DONE Make turns take time/turn counter/turn processor
+	CLOSED: [2020-08-10 Mon 15:49]
+*** DONE Restart level button
+	CLOSED: [2020-08-10 Mon 15:49]
+*** TODO Enemies
+**** TODO Goomba
+**** TODO Hand
+*** DONE Finish Demo
+	CLOSED: [2020-10-24 Sat 12:34]
+*** TODO HUD 
+*** TODO Connect train cars

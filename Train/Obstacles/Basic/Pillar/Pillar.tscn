@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Train/Obstacles/Obstacle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Train/Obstacles/Basic/Pillar/Pillar1.png" type="Texture" id=2]
+[ext_resource path="res://Train/Obstacles/Basic/Pillar/Pillar2.png" type="Texture" id=3]
+[ext_resource path="res://Train/Obstacles/Basic/Pillar/Pillar.gd" type="Script" id=4]
+[ext_resource path="res://Train/Obstacles/Basic/Pillar/Pillar3.png" type="Texture" id=5]
+
+[node name="Pillar" instance=ExtResource( 1 )]
+script = ExtResource( 4 )
+
+[node name="pillar1" type="Sprite3D" parent="model" index="0"]
+transform = Transform( -0.199645, 0.0172564, 0.0154126, 0.0119101, 0.289264, 0.25836, 3.14117e-08, 0.0776457, -0.965926, 0.432414, 0.810261, -0.372246 )
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 2 )
+
+[node name="pillar2" type="Sprite3D" parent="model" index="1"]
+transform = Transform( -0.2, 1.87516e-08, -1.45851e-07, 4.52534e-09, 0.289778, 0.258819, 3.14117e-08, 0.0776457, -0.965926, 0.119218, 1.07879, -0.100363 )
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 3 )
+
+[node name="pillar3" type="Sprite3D" parent="model" index="2"]
+transform = Transform( -0.2, 1.87516e-08, -1.45851e-07, 4.52534e-09, 0.289778, 0.258819, 3.14117e-08, 0.0776457, -0.965926, -0.4661, 0.850656, -0.527109 )
+flip_h = true
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 5 )

@@ -5,7 +5,7 @@ we realized that the mechanics weren't as fun as we thought they would be.
 
 George Antash did the art.
 
-![gameplay](media/ct.gif)
+![gameplay](media/ct.gif)  
 Note: Assets had to be reimported for screencapture do to an update in godot.
 Some assets are actually higher quality.
 
